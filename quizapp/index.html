@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="welcome">
+        <h1 style="margin-bottom: 40px;">Wecome To The Quiz Challange!</h1>
+        <img src="/Assets/logo.png" alt="The Logo">
+        <input class="userName" type="text" maxlength="20" placeholder="Plese Enter Your Name Here....">
+        <!-- <button>Proceed</button> -->
+    </div>
+    <div class="cat">
+        <h2 style="margin-bottom: 20px;">Please Select a Category</h2>
+        <div class="catList">
+            <button data-cattype="q1" class="catListItem" >Pipes and Cisterns</button>
+            <!-- onclick="instructPage()" -->
+            <button data-cattype="q2" class="catListItem" onclick="instructPage()">Probability</button>
+            <button data-cattype="q3" class="catListItem">Problems on age</button>
+            <button data-cattype="q4" class="catListItem">Profit and loss</button>
+        </div>
+    </div>
+    <div class="queAndAns">
+        <h3 class="catName">Pipes and Cisterns</h3>
+        <div class="que">here Come the first quetion ?</div>
+        <div class="ans">
+            <button class="answers">ans 1</button>
+            <button class="answers">ans 2</button>
+            <button class="answers">ans 3</button>
+            <button class="answers">ans 4</button>
+        </div>
+        <button class="nxtBtn" >Next</button>
+        
+    </div>
+
+    <div class="instructions">
+        <ol class="instruct">
+            <li>You Will be Given 10 Questions, Every quetion have 10 Marks</li>
+            <li>Quiz will Start as soon as you click Start Quiz ans A timer will Also start.</li>
+            <li>Attempt all quesyions in minimum time possible</li>
+        </ol>
+        <button class="instrucBtn" onclick="quizStart()">Next</button>
+    </div>
+</body>
+</html>
